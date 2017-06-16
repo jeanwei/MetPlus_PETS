@@ -5,7 +5,7 @@ source 'https://rubygems.org'
 # ruby '2.2.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.3'
+gem 'rails', '~> 4.2.5.1'
 #gem 'rails', '4.2.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
@@ -35,7 +35,7 @@ end
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
-gem 'devise',           '~> 3.5.2'
+gem 'devise',           '>= 3.5.4'
 gem 'devise_invitable', '~> 1.5.2'
 
 gem 'figaro'
@@ -52,7 +52,7 @@ gem 'pusher'
 
 gem 'js_cookie_rails'
 
-# gem 'nokogiri', '~> 1.6', '>= 1.6.7'
+gem 'nokogiri', '>= 1.6.7.2'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
@@ -120,3 +120,4 @@ group :production do
   gem 'rails_12factor'
   gem 'puma'
 end
+gem 'rails-html-sanitizer', '~> 1.0.3'
